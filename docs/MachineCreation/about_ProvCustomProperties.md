@@ -44,7 +44,8 @@ The following custom properties are specific to hosting infrastructure targets t
 
 
 * AwsCaptureInstanceProperties: Capture AWS instance properties, including the Identity Access Management role and tags from the master image, then apply them to the provisioned virtual machines. Specify either True or False. If this property is not specified, AwsCaptureInstanceProperties is set to False by default.
-* AwsOperationalResourcesTagging: Apply tags from master image to all Citrix created operational resources including virtual machines, VM disks, VM network interfaces, S3 buckets, S3 objects, launch templates and AMIs. Specify either True or False. When setting this property to True, you must also set the AwsCaptureInstanceProperties parameter to True. If this value is not specified, the AwsOperationalResourcesTagging paramter is set to False by default.
+Note: AwsCaptureInstanceProperties is now deprecated.
+* AwsOperationalResourcesTagging: Apply tags from master image to all Citrix created operational resources including virtual machines, VM disks, VM network interfaces, S3 buckets, S3 objects, launch templates and AMIs. Specify either True or False. When setting this property to True, you must also set the AwsCaptureInstanceProperties parameter to True or must have supplied Machine Profile. If this value is not specified, the AwsOperationalResourcesTagging paramter is set to False by default.
 
 ## Custom Properties For Gcp
 
